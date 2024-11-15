@@ -4,6 +4,7 @@ import { Monitor, Users, PlusCircle, LayoutDashboard } from 'lucide-react';
 import { AssetForm } from './components/AssetForm';
 import { UserForm } from './components/UserForm';
 import { UserTable } from './components/UserTable';
+import { User } from './types/user';
 
 function App() {
   const handleSubmit = (data: any) => {
@@ -87,8 +88,18 @@ function App() {
                 path="/users"
                 element={
                 <>
-                <UserForm/>
-                <UserTable/>
+                <UserForm onSubmit={function (data: Partial<User>): void {
+                      throw new Error('Function not implemented.');
+                    } } onCancel={function (): void {
+                      throw new Error('Function not implemented.');
+                    } }/>
+                <UserTable users={[]} onEdit={function (user: User): void {
+                      throw new Error('Function not implemented.');
+                    } } onToggleStatus={function (user: User): void {
+                      throw new Error('Function not implemented.');
+                    } } onDelete={function (user: User): void {
+                      throw new Error('Function not implemented.');
+                    } }/>
                 </>
                 }
               />
