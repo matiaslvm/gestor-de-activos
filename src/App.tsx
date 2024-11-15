@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Monitor, Users, PlusCircle, LayoutDashboard } from 'lucide-react';
 import { AssetForm } from './components/AssetForm';
+import { UserForm } from './components/UserForm';
+import { UserTable } from './components/UserTable';
 
 function App() {
   const handleSubmit = (data: any) => {
@@ -84,9 +86,10 @@ function App() {
               <Route
                 path="/users"
                 element={
-                  <div className="px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-2xl font-semibold text-gray-900">Gestión de Usuarios</h1>
-                  </div>
+                <>
+                <UserForm/>
+                <UserTable/>
+                </>
                 }
               />
             </Routes>

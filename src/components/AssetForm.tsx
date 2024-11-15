@@ -31,7 +31,7 @@ export function AssetForm({ initialData, onSubmit, onPrint }: AssetFormProps) {
             </div>
             <div className="text-right">
               <p className="text-sm font-medium text-gray-500">Ubicación</p>
-              <p className="text-sm text-gray-900">Área de Transformación Digital & TI</p>
+              <p className="text-sm text-gray-900">Argentina, Córdoba Capital</p>
             </div>
           </div>
         </div>
