@@ -5,6 +5,7 @@ import { AssetForm } from './components/AssetForm';
 import { UserForm } from './components/UserForm';
 import { UserTable } from './components/UserTable';
 import { User } from './types/user';
+import { Dashboard } from './components/Dashboard';
 
 function App() {
   const handleSubmit = (data: any) => {
@@ -61,9 +62,7 @@ function App() {
               <Route
                 path="/"
                 element={
-                  <div className="px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
-                  </div>
+                  <Dashboard assets={[]}/>
                 }
               />
               <Route
