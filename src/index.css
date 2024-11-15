@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-asset, .printable-asset * {
+    visibility: visible;
+  }
+  .printable-asset {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
